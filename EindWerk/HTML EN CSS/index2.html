@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Mohammed Al-Jaberi-->
+    <!--5IF-->
+    <!--22/05/2023-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket League Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/x-icon" href="pics/game-store.png">
+</head>
+<body>
+    <div class="contanier">
+
+        <header>
+            <a  class="logo"> <img src="pics/game-store.png" alt="imgLogo" id="imgLogo"> <span>Rocket League Shop</span></a>
+            <ul>
+                <li><a href="EindWerk.html">Thuis</a></li>
+                <li><a href="index2.html">Diensten</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="index3.html">Aanmelden</a></li>
+                <li><a href="ProductenDoelExplosies.html"> <img src="pics/shopping-cart.png" alt="imgLogo" id="imgLogo2"></a></li>
+                
+                
+            </ul>
+          </header>
+          <script class="banner">
+    
+          </script>
+          <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header=document.querySelector("header");
+                header.classList.toggle("sticky",window.scrollY>0);
+          
+            })
+          </script>
+
+        <div class="content">
+            <div class="div-text">
+                <span>Onze Diensten</span>
+                <h3>Al jouw</h3>
+                <h1>Rocket League behoeften zijn hier beschikbaar</h1>
+                <p>In onze Rocket League shop vind je alles wat je nodig hebt <br> om je wagen aan te passen en te laten opvallen in het veld, <br> 
+                    van felgekleurde wielen tot verwoestende doel explosies. <br><b>PlayStation, Xbox, PC en Nintendo!</b></p>
+                    <a href="InledingProducten.html" class="btn">koop nu</a>
+            </div>
+
+            <div class="div-img">
+                <img id="big-img" src="pics/item1-removebg-preview.png" alt="">
+            </div>
+
+            <div class="small-img">
+                <figure>
+                    <img onclick="myTshirt(this.src)" src="pics/item_1-removebg-preview.png" alt="">
+                    <a href="ProductenCredits.html" target="_self">Credits</a>
+                </figure>
+                <figure>
+                    <img onclick="myTshirt(this.src)" src="pics/BG-FNG_0004_Rocket-League-Fennec-Carro-RL-removebg-preview.png" alt="">
+                    <a href="ProductAutos.html" target="_self">Auto's</a>
+                </figure>
+                <figure>
+                    <img onclick="myTshirt(this.src)" src="pics/item_3-removebg-preview.png" alt="">
+                    <a href="ProductenDoelExplosies.html" target="_self">Doel Explosies</a>
+                    
+                </figure>
+                <figure>
+                    <img onclick="myTshirt(this.src)" src="pics/item_4-removebg-preview.png" alt="">
+                    <a href="ProductenWielen.html" target="_self">Wielen</a>
+                </figure>
+                <figure>
+                    <img onclick="myTshirt(this.src)" src="pics/item_5-removebg-preview.png" alt="">
+                    <a href="ProductenBoosts.html" target="_self">Boosts</a>
+                </figure>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        let bigImage = document.getElementById('big-img');
+
+        function myTshirt(shirt){
+            bigImage.src = shirt
+        }
+    </script>
+</body>
+</html>
