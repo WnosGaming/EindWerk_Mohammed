@@ -48,7 +48,7 @@
 
                 <label for="">Wachtwoord</label>
                 <input type="password" placeholder="Voer uw Wachtwoord">
-                <button>Aanmelden</button>
+                <button class="Aanmelden">Aanmelden</button>
             </form>
 
             <div class="bottom-div">
@@ -64,5 +64,12 @@
             </div>
         </div>
     </div>
+
+    <script>
+        let Aanmelden = document.querySelector('.Aanmelden');
+        Aanmelden.addEventListener('click', function() {
+            alert('Bedankt voor het aanmelden bij ons!');
+        });
+    </script>
 </body>
 </html>
