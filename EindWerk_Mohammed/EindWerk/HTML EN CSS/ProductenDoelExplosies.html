@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Mohammed Al-Jaberi-->
+    <!--5IF-->
+    <!--22/05/2023-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rocket League Shop</title>
+	<link rel="stylesheet" type="text/css" href="ProductenDoelExplosies.css">
+    <link rel="icon" type="image/x-icon" href="pics/game-store.png">
+</head>
+<body>
+	<header>
+        <a  class="logo"> <img src="pics/game-store.png" alt="imgLogo" id="imgLogo"> <span id="Title-RLS">Rocket League Shop</span></a>
+		<ul>
+			<li><a href="Thuis.html">Thuis</a></li>
+            <li><a href="Diensten.html">Diensten</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Aanmelden.html">Aanmelden</a></li>
+            <li><a href="ProductenDoelExplosies.html"> <img src="pics/shopping-cart.png" alt="imgLogo" id="imgLogo2"></a></li>
+			
+			
+		</ul>
+      </header>
+
+
+
+
+
+
+      <br>
+	<main>
+		<div class="product-container">
+			<h1>Dueling Dragons</h1>
+			<img src="pics/Dueling Dragons.jpg" alt="Product afbeelding" id="PrdouctImg">
+			<p>Prijs: €6</p>
+			<button class="koop-knop">Koop nu</button>
+		</div>
+	</main>
+    <main>
+		<div class="product-container">
+			<h1>Hellfire</h1>
+			<img src="pics/Hellfire.jpg" alt="Product afbeelding" id="PrdouctImg">
+			<p>Prijs: €3.36</p>
+			<button class="koop-knop">Koop nu</button>
+		</div>
+	</main>
+    <main>
+		<div class="product-container">
+			<h1>Electroshock</h1>
+			<img src="pics/Electroshock.jpg" alt="Product afbeelding" id="PrdouctImg">
+			<p>Prijs: €3.36</p>
+			<button class="koop-knop">Koop nu</button>
+		</div>
+	</main>
+    <main>
+		<div class="product-container">
+			<h1>Sub Zero</h1>
+			<img src="pics/Sub Zero.jpg" alt="Product afbeelding" id="PrdouctImg">
+			<p>Prijs: €3.36</p>
+			<button class="koop-knop">Koop nu</button>
+		</div>
+	</main>
+    <main>
+		<div class="product-container">
+			<h1>Gravity Bomb</h1>
+			<img src="pics/Gravity Bomb.jpg" alt="Product afbeelding" id="PrdouctImg">
+			<p>Prijs: €5.76</p>
+			<button class="koop-knop">Koop nu</button>
+		</div>
+	</main>
+    
+
+	<footer>
+		<p>&copy; 2023 - Rocket League Shop</p>
+	</footer>
+
+	<script>
+    let koopKnop = document.querySelector('.koop-knop');
+        koopKnop.addEventListener('click', function() {
+            alert('Product is toegevoegd aan je winkelmandje!');
+        });
+  window.addEventListener("scroll", function(){
+      var header=document.querySelector("header");
+      header.classList.toggle("sticky",window.scrollY>0);
+
+  })
+        </script>
+</body>
+</html>
